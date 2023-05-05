@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,17 +17,17 @@ public class PlayerController : MonoBehaviour
     {
         if(Input.GetKey("left"))
         {
-            gameObject.transform.Translate(-25f * Time.deltaTime, 0, 0);
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-600f * Time.deltaTime,0));
         }
         if(Input.GetKey("right"))
         {
-            gameObject.transform.Translate(25f * Time.deltaTime, 0, 0);
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(600f * Time.deltaTime,0));
         }
 
-        ElSlatos();
+        Salto();
     }
 
-    void ElSlatos()
+    void Salto()
     {
         if(gameObject.transform.position.y <=0)
         {
@@ -35,14 +36,15 @@ public class PlayerController : MonoBehaviour
 
         if(Input.GetKey("up") && canJump && gameObject.transform.position.y < 10)
         {
-            gameObject.transform.Translate(0, 25f * Time.deltaTime, 0);
+            gameObject.transform.Translate(0, 50f * Time.deltaTime, 0);
         }
         else
         {
             canJump = false;
+
             if (gameObject.transform.position.y > 0)
             {
-                gameObject.transform.Translate(0, -25f * Time.deltaTime, 0);
+                gameObject.transform.Translate(0, -50f * Time.deltaTime, 0);
             }
         }
     }
