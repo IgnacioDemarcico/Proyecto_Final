@@ -18,11 +18,17 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKey("left"))
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-300f * Time.deltaTime,0));
+	        gameObject.GetComponent<Animator>().SetBool("movimiento",true);
         }
         if(Input.GetKey("right"))
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(300f * Time.deltaTime,0));
+            gameObject.GetComponent<Animator>().SetBool("movimiento",true);
         }
+	if(!Input.GetKey("left") && !Input.GetKey("right"))
+	{
+        gameObject.GetComponent<Animator>().SetBool("movimiento",false);
+    }
 
         Salto();
     }
