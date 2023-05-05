@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     bool canJump;
-    // Start is called before the first frame update
+    private bool puedeMoverse; //va a servir para cuando un enemigo lo golpee
     void Start()
     {
         
