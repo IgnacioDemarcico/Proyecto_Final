@@ -9,7 +9,7 @@ public class Enemigo : MonoBehaviour
     /*private void Start()
     {
         animator = GetComponent<Animator>();
-    }*/
+    }
     public void TomarDanio(float danio)
     {
         vida -= danio;
@@ -18,7 +18,8 @@ public class Enemigo : MonoBehaviour
             Muerte();
         }
     }
-    private void OnCollisionEnter2D(collision2d other)
+    
+    private void OnCollisionEnter2D(Collision2D other)
     {
         if(other.gameObject.CompareTag("Player"))
         {
@@ -26,7 +27,9 @@ public class Enemigo : MonoBehaviour
             other.gameObject.Getcomponent<PlayerController>().AplicarGolpe();
         }
     }
-    /*private void Muerte()
+    
+    
+    private void Muerte()
     {
         animator.Set.Trigger("Muerte");
     }*/
