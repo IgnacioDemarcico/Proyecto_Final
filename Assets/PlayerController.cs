@@ -17,11 +17,11 @@ public class PlayerController : MonoBehaviour
     {
         if(Input.GetKey("left"))
         {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1000f * Time.deltaTime,0));
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-300f * Time.deltaTime,0));
         }
         if(Input.GetKey("right"))
         {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(1000f * Time.deltaTime,0));
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(300f * Time.deltaTime,0));
         }
 
         Salto();
