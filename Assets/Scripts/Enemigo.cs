@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemigo : MonoBehaviour
-{
-    /*[SerializeField] private float vida;
+{/* [SerializeField] private float vida;
     private Animator animator;
     private void Start()
     {

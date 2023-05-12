@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class AtqMelee : MonoBehaviour
 {
-    // Start is called before the first frame update
-   /* [SerializeField] private Transform controladorMelee;
+   /* // Start is called before the first frame update
+   [SerializeField] private Transform controladorMelee;
     [SerializeField] private float radioGolpe;
     [SerializeField] private float DanioGolpe;
     //[SerializeField] private float cooldown; para el tiempo entre ataques
@@ -38,6 +38,6 @@ public class AtqMelee : MonoBehaviour
     private void DibujarGizmos(){
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(controladorMelee.position,radioGolpe); 
-    }
-    */
+    }*/
+    
 }
