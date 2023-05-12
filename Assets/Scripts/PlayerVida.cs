@@ -4,24 +4,51 @@ using UnityEngine;
 
 public class PlayerVida : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public static PlayerVida instance;
     public int currentHealth, maxHealth;
+    public float ivencibleLength;
+    private float ivencibleCounter;
+    private SpriteRenderer sprai;
+
+    private void Awake()
+    {
+        instance = this;
+    }
     void Start()
     {
         currentHealth = maxHealth;
+        sprai = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(ivencibleCounter > 0)
+        {
+            ivencibleCounter -= Time.deltaTime;
+            if(ivencibleCounter <= 0)
+            {
+                sprai.color = new Color(sprai.color.r,sprai.color.g,sprai.color.b,1f);
+            }
+        }
     }
     public void AplicarGolpe()
     {
-        currentHealth--;
-        if (currentHealth <= 0)
+        if (ivencibleCounter <= 0)
         {
-            gameObject.SetActive(false);
+            currentHealth--;
+            if (currentHealth <= 0)
+            {
+                currentHealth = 0;
+                gameObject.SetActive(false);
+            }
+            else
+            {
+                ivencibleCounter = ivencibleLength;
+                sprai.color = new Color(sprai.color.r,sprai.color.g,sprai.color.b,.5f);
+                PlayerController.instance.Knockback();
+            }
         }
+        
     }
 }
