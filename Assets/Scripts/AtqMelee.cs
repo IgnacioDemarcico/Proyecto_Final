@@ -11,11 +11,11 @@ public class AtqMelee : MonoBehaviour
     //[SerializeField] private float cooldown; para el tiempo entre ataques
     //private Animator animator; SIRVE DESPUES CUANDO TENGAMOS LAS ANIMACIONES
 
-    private void Start()
+    /*private void Start()
     {
         //animator = GetComponent<Animator>();
     }
-/*
+
     private void Update()
     {
         if(input.GetButtonDown("Fire1"))
@@ -34,6 +34,6 @@ public class AtqMelee : MonoBehaviour
                 colisionador.transform.Getcomponent<Enemigo>().TomarDanio(DanioGolpe);
             }
         }
-    }
-    */
+    }*/
+    
 }
