@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     bool canJump;
+
+    public float velocidad;
     private bool puedeMoverse; //va a servir para cuando un enemigo lo golpee
     void Start()
     {
@@ -14,21 +16,21 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey("left"))
+       if(Input.GetKey("left"))
         {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-300f * Time.deltaTime,0));
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-250f * Time.deltaTime,0));
 	        gameObject.GetComponent<Animator>().SetBool("movimiento",true);
         }
         if(Input.GetKey("right"))
         {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(300f * Time.deltaTime,0));
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(250f * Time.deltaTime,0));
             gameObject.GetComponent<Animator>().SetBool("movimiento",true);
         }
 	if(!Input.GetKey("left") && !Input.GetKey("right"))
 	{
         gameObject.GetComponent<Animator>().SetBool("movimiento",false);
     }
-
+        //ProcesarMovimiento();
         Salto();
     }
 
@@ -47,4 +49,26 @@ public class PlayerController : MonoBehaviour
             canJump = true;
         }
     }
+
+    void ProcesarMovimiento()
+    {
+        float inputMovimiento = Input.GetAxis("Horizontal");
+        Rigidbody2D rigidbody = GetComponent<Rigidbody2D>();
+
+        rigidbody.velocity = new Vector2(inputMovimiento * velocidad, rigidbody.velocity.y);
+    }
 }
+ /*if(Input.GetKey("left"))
+        {
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-250f * Time.deltaTime,0));
+	        gameObject.GetComponent<Animator>().SetBool("movimiento",true);
+        }
+        if(Input.GetKey("right"))
+        {
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(250f * Time.deltaTime,0));
+            gameObject.GetComponent<Animator>().SetBool("movimiento",true);
+        }
+	if(!Input.GetKey("left") && !Input.GetKey("right"))
+	{
+        gameObject.GetComponent<Animator>().SetBool("movimiento",false);
+    }*/
