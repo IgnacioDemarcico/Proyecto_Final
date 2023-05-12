@@ -5,20 +5,20 @@ using UnityEngine;
 public class AtqMelee : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] private Transform controladorMelee;
+   /* [SerializeField] private Transform controladorMelee;
     [SerializeField] private float radioGolpe;
-    [SerializeField] private float danioGolpe;
+    [SerializeField] private float DanioGolpe;
     //[SerializeField] private float cooldown; para el tiempo entre ataques
     //private Animator animator; SIRVE DESPUES CUANDO TENGAMOS LAS ANIMACIONES
 
-    /*private void Start()
+    private void Start()
     {
         //animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
-        if(input.GetButtonDown("Fire1"))
+        if(Input.GetButtonDown("Fire1"))
         {
             Golpe();
         }
@@ -34,6 +34,10 @@ public class AtqMelee : MonoBehaviour
                 colisionador.transform.Getcomponent<Enemigo>().TomarDanio(DanioGolpe);
             }
         }
-    }*/
-    
+    }
+    private void DibujarGizmos(){
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(controladorMelee.position,radioGolpe); 
+    }
+    */
 }
