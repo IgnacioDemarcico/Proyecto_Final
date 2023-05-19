@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    bool canJump;
     public float knockBackLength, knockBackForce;
     private float knockBackCounter;
     public static PlayerController instance;
@@ -25,74 +24,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(knockBackCounter <= 0)
-        {
-       if(Input.GetKey("left"))
-        {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-250f * Time.deltaTime,0));
-	        gameObject.GetComponent<Animator>().SetBool("movimiento",true);
-        }
-            if(Input.GetKey("right"))
-        {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(250f * Time.deltaTime,0));
-            gameObject.GetComponent<Animator>().SetBool("movimiento",true);
-        }
-	if(!Input.GetKey("left") && !Input.GetKey("right"))
-	{
-        gameObject.GetComponent<Animator>().SetBool("movimiento",false);
-    }
-        //ProcesarMovimiento();
-        Salto();
-
-        }
-        else
-        {
-            knockBackCounter -= Time.deltaTime;
-        }
+        
 
     }
 
-    void Salto()
-    {
-        if(Input.GetKeyDown("up") && canJump)
-        {
-            canJump = false;
-             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0,50f));
-        }
-    }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.transform.tag == "suelo")
-        {
-            canJump = true;
-        }
-    }
-    public void Knockback()
-    {
-        knockBackCounter = knockBackLength;
-        //theRB.velocity = new Vector(0f, knockBackForce); Esto no se puede porque theRB no existe
-    }
+    
 
-
-    void ProcesarMovimiento()
-    {
-        float inputMovimiento = Input.GetAxis("Horizontal");
-        Rigidbody2D rigidbody = GetComponent<Rigidbody2D>();
-
-        rigidbody.velocity = new Vector2(inputMovimiento * velocidad, rigidbody.velocity.y);
-    }
 }
- /*if(Input.GetKey("left"))
-        {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-250f * Time.deltaTime,0));
-	        gameObject.GetComponent<Animator>().SetBool("movimiento",true);
-        }
-        if(Input.GetKey("right"))
-        {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(250f * Time.deltaTime,0));
-            gameObject.GetComponent<Animator>().SetBool("movimiento",true);
-        }
-	if(!Input.GetKey("left") && !Input.GetKey("right"))
-	{
-        gameObject.GetComponent<Animator>().SetBool("movimiento",false);
-    }*/

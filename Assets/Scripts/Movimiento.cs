@@ -5,22 +5,42 @@ using UnityEngine;
 public class Movete : MonoBehaviour
 {
     public float velocidad = 5f;
+    public float knockBackLength, knockBackForce;
+    private float knockBackCounter;
+    public static PlayerController instance;
 
     private Rigidbody2D rb;
 
-    private void Awake()
+    /*private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+    }*/
+    public void Awake()
+    {
+        instance = this;
     }
 
     private void Update()
     {
-        float movimientoHorizontal = Input.GetAxis("Horizontal");
+        
+        if(knockBackCounter <= 0)
+        {
+            float movimientoHorizontal = Input.GetAxis("Horizontal");
 
-        // Calcula la velocidad del movimiento
-        Vector2 velocidadMovimiento = new Vector2(movimientoHorizontal * velocidad, rb.velocity.y);
+            // Calcula la velocidad del movimiento
+            Vector2 velocidadMovimiento = new Vector2(movimientoHorizontal * velocidad, rb.velocity.y);
 
-        // Aplica la velocidad al Rigidbody2D
-        rb.velocity = velocidadMovimiento;
+            // Aplica la velocidad al Rigidbody2D
+            rb.velocity = velocidadMovimiento;
+        }
+        else
+        {
+            knockBackCounter -= Time.deltaTime;
+        }
+    }
+    public void Knockback()
+    {
+        knockBackCounter = knockBackLength;
+
     }
 }
