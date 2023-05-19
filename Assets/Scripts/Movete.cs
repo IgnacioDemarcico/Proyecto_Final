@@ -17,6 +17,18 @@ public class Movimiento: MonoBehaviour
 
     private void Update()
     {
+if(Input.GetKey("a"))
+        {
+	    gameObject.GetComponent<Animator>().SetBool("movimiento",true);
+        }
+            if(Input.GetKey("d"))
+        {           
+            gameObject.GetComponent<Animator>().SetBool("movimiento",true);
+        }
+	if(!Input.GetKey("a") && !Input.GetKey("d"))
+	{
+        gameObject.GetComponent<Animator>().SetBool("movimiento",false);
+   	}
         float movimientoHorizontal = Input.GetAxis("Horizontal");
 
         // Calcula la velocidad del movimiento
