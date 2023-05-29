@@ -13,6 +13,7 @@ public class Movimiento: MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        //instance = this;
     }
 
     private void Update()

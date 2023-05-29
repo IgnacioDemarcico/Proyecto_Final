@@ -1,4 +1,4 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,7 +14,7 @@ public class Movete : MonoBehaviour
     /*private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-    }*/
+    }
     public void Awake()
     {
         instance = this;
@@ -43,4 +43,4 @@ public class Movete : MonoBehaviour
         knockBackCounter = knockBackLength;
 
     }
-}
+}*/

@@ -46,7 +46,7 @@ public class PlayerVida : MonoBehaviour
             {
                 ivencibleCounter = ivencibleLength;
                 sprai.color = new Color(sprai.color.r,sprai.color.g,sprai.color.b,.5f);
-                Movimiento.instance.Knockback();
+                //Movimiento.instance.Knockback();
             }
         }
         
