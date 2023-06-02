@@ -5,10 +5,11 @@ using UnityEngine;
 public class PlayerVida : MonoBehaviour
 {
     public static PlayerVida instance;
-    public int currentHealth, maxHealth;
+    [SerializeField]public int currentHealth, maxHealth;
     public float ivencibleLength;
     private float ivencibleCounter;
     private SpriteRenderer sprai;
+    [SerializeField] private BarraDeVida barraDeVida;
 
     private void Awake()
     {
@@ -18,6 +19,7 @@ public class PlayerVida : MonoBehaviour
     {
         currentHealth = maxHealth;
         sprai = GetComponent<SpriteRenderer>();
+        barraDeVida.InicializarBarraDeVida(currentHealth);
     }
 
     // Update is called once per frame
@@ -37,6 +39,7 @@ public class PlayerVida : MonoBehaviour
         if (ivencibleCounter <= 0)
         {
             currentHealth--;
+            barraDeVida.CambiarVidaActual(currentHealth);
             if (currentHealth <= 0)
             {
                 currentHealth = 0;
