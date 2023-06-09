@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class Checkpoint : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public SpriteRenderer theSR;
+    public Sprite cpOn, cpOff;
+     private void OnTriggerEnter2D(Collider2D other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(other.CompareTag("Player"))
+        {
+            theSR.sprite = cpOn;
+        }
     }
 }
