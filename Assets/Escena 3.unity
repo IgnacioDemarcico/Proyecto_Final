@@ -1331,7 +1331,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
+  m_Mass: 1
   m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 2
@@ -1411,12 +1411,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1732712365}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e2eee864b8904647b98159d55c55b62, type: 3}
+  m_Script: {fileID: 11500000, guid: ae67ce6d406e5b44d8f75745e6517749, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 550
-  fuerzaSalto: 2700
-  KnockBackLength: 0.25
+  velocidad: 250
+  fuerzaSalto: 950
+  KnockBackLength: 1
   knockBackForce: 300
 --- !u!1 &1775403755
 GameObject:
