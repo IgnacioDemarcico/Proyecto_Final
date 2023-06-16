@@ -3,33 +3,48 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemigo : MonoBehaviour
-{/* [SerializeField] private float vida;
-    private Animator animator;
-    private void Start()
+{
+    public float moveSpeed;
+
+    public Transform leftPoint, rightPoint;
+
+    private bool movingRight;
+
+    private Rigidbody2D theRB;
+    public SpriteRenderer theSr;
+    // Start is called before the first frame update
+    void Start()
     {
-        animator = GetComponent<Animator>();
+        theRB = GetComponent<Rigidbody2D>();
+        leftPoint.parent = null;
+        rightPoint.parent = null;
     }
-    public void TomarDanio(float danio)
+
+    // Update is called once per frame
+    void Update()
     {
-        vida -= danio;
-        if(vida <= 0)
+        if(movingRight)
         {
-            Muerte();
-        }
-    }
-    
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if(other.gameObject.CompareTag("Player"))
+            theRB.velocity = new Vector2(moveSpeed, theRB.velocity.y);
+
+            theSr.flipX = true;
+            if(transform.position.x > rightPoint.position.x)
         {
-            GameManager.Instance.Morir();
-            other.gameObject.Getcomponent<PlayerController>().AplicarGolpe();
+            movingRight = false;
         }
+        }
+        else
+        {
+            theRB.velocity = new Vector2(-moveSpeed, theRB.velocity.y);
+
+            theSr.flipX = false;
+
+            if(transform.position.x < leftPoint.position.x)
+            {
+                movingRight = true;
+            }
+        }
+        
+        
     }
-    
-    
-    private void Muerte()
-    {
-        animator.Set.Trigger("Muerte");
-    }*/
 }
