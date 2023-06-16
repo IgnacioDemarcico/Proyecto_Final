@@ -10,7 +10,13 @@ public class Checkpoint : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
+            CheckpointController.instance.DeactivateCheckpoints();;
             theSR.sprite = cpOn;
+            CheckpointController.instance.SetSpawnPoint(transform.position);
         }
+    }
+    public void ResetCheckpoint()
+    {
+        theSR.sprite = cpOff;
     }
 }
