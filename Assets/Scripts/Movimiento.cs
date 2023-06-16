@@ -72,6 +72,7 @@ public class Movimiento : MonoBehaviour
     {
         knockBackCounter = KnockBackLength;
         rb.velocity = new Vector2(0f, knockBackForce);
+        gameObject.GetComponent<Animator>().SetBool("movimiento", false);
     }
 }
 
