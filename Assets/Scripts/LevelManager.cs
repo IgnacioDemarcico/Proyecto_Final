@@ -8,6 +8,8 @@ public class LevelManager : MonoBehaviour
 
     public float waitToRespawn;
 
+    public int monedasAgarradas;
+
     public void Awake()
     {
         instance = this;
