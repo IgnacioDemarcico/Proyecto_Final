@@ -33,7 +33,7 @@ public class AtqMelee : MonoBehaviour
     }
     private void Update()
     {
-        if(Input.GetButtonDown("Fire1"))
+        if(Input.GetKey("e"))
         {
             Golpe();
         }

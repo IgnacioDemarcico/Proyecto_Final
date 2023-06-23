@@ -2306,8 +2306,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controladorMelee: {fileID: 790533624}
-  radioGolpe: 17.56
-  DanioGolpe: 1
+  radioGolpe: 1
+  DanioGolpe: 50
 --- !u!1 &1775403755
 GameObject:
   m_ObjectHideFlags: 0
