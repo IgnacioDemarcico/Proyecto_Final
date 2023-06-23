@@ -54,4 +54,14 @@ public class PlayerVida : MonoBehaviour
         }
         
     }
+
+    public void HealPLayer()
+    {
+        currentHealth++;
+        if(currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        barraDeVida.CambiarVidaActual(currentHealth);
+    }
 }
