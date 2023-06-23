@@ -947,6 +947,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.4735797, y: 0.5572169}
   m_EdgeRadius: 0
+--- !u!1 &790533623
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 790533624}
+  m_Layer: 0
+  m_Name: ControladorMelee
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &790533624
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790533623}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.198, y: -0.319, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1732712368}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &797275228
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,9 +1103,10 @@ GameObject:
   - component: {fileID: 878555882}
   - component: {fileID: 878555887}
   - component: {fileID: 878555888}
+  - component: {fileID: 878555889}
   m_Layer: 0
   m_Name: Enemigo
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1225,6 +1257,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d11d7e265011d594aa76f5459ae1a838, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &878555889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878555881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4855c59e3b569d641af7ad9b0df9f367, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 2
+  maxHealth: 2
 --- !u!1 &1042055851
 GameObject:
   m_ObjectHideFlags: 0
@@ -1863,6 +1909,7 @@ GameObject:
   - component: {fileID: 1732712374}
   - component: {fileID: 1732712373}
   - component: {fileID: 1732712375}
+  - component: {fileID: 1732712376}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1933,7 +1980,8 @@ Transform:
   m_LocalPosition: {x: 573.1, y: 288.4, z: 28.9582}
   m_LocalScale: {x: 110.7983, y: 110.7983, z: 110.7983}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 790533624}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2036,6 +2084,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1732712376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732712365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f5d11227c3af8643980ebbdcbff7043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controladorMelee: {fileID: 790533624}
+  radioGolpe: 17.56
+  DanioGolpe: 1
 --- !u!1 &1775403755
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AtqMelee : MonoBehaviour
 {
-   /* // Start is called before the first frame update
+   // Start is called before the first frame update
    [SerializeField] private Transform controladorMelee;
     [SerializeField] private float radioGolpe;
     [SerializeField] private float DanioGolpe;
@@ -15,14 +15,6 @@ public class AtqMelee : MonoBehaviour
     {
         //animator = GetComponent<Animator>();
     }
-
-    private void Update()
-    {
-        if(Input.GetButtonDown("Fire1"))
-        {
-            Golpe();
-        }
-    }
     private void Golpe()
     {
         //animator.SetTrigger("Golpe");
@@ -31,13 +23,21 @@ public class AtqMelee : MonoBehaviour
         {
             if(colisionador.CompareTag("Enemigo"))
             {
-                colisionador.transform.Getcomponent<Enemigo>().TomarDanio(DanioGolpe);
+                colisionador.transform.GetComponent<VidaEnemigo>().TomarDanio(DanioGolpe);
             }
         }
     }
     private void DibujarGizmos(){
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(controladorMelee.position,radioGolpe); 
-    }*/
+    }
+    private void Update()
+    {
+        if(Input.GetButtonDown("Fire1"))
+        {
+            Golpe();
+        }
+    }
+   
     
 }
