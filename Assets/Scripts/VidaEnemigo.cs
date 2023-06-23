@@ -30,7 +30,6 @@ public class VidaEnemigo : MonoBehaviour
         if(currentHealth <= 0)
         {
            currentHealth = 0;
-           LevelManager.instance.RespawnPlayer();
         }
         else
         {
