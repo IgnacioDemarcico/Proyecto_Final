@@ -5,7 +5,7 @@ using UnityEngine;
 public class Pickup : MonoBehaviour
 {
     
-    public bool moneda;
+    public bool moneda, curacion;
     private bool agarrada;
     // Start is called before the first frame update
     private void OnTriggerEnter2D(Collider2D other)
@@ -17,6 +17,15 @@ public class Pickup : MonoBehaviour
                 LevelManager.instance.monedasAgarradas++;
                 agarrada = true;
                 Destroy(gameObject);
+            }
+            if(curacion)
+            {
+                if(PlayerVida.instance.currentHealth != PlayerVida.instance.maxHealth)
+                {
+                    PlayerVida.instance.HealPLayer();
+                    agarrada= true;
+                    Destroy(gameObject);
+                }
             }
         }
     }
