@@ -34,6 +34,15 @@ public class BossPrueba : MonoBehaviour
         switch(currentStates)
         {
             case bossStates.shooting:
+
+            disparos -= Time.deltaTime;
+            if(disparos <= 0)
+            {
+                disparos = timeBetweenShots;
+                var newbala = Instantiate(bala, firepoint.position, firepoint.rotation);
+                newbala.transform.localScale = jefe.localScale;
+            }
+
             break;
 
             case bossStates.hurt:
@@ -55,11 +64,11 @@ public class BossPrueba : MonoBehaviour
 
                 if(jefe.position.x > puntoDer.position.x)
                 {
+                    jefe.localScale = Vector3.one;
+
                     moveRight = false;
 
-                    currentStates = bossStates.shooting;
-
-                    disparos = timeBetweenShots;
+                    EndMovement();
                 }
             }
             else
@@ -68,11 +77,11 @@ public class BossPrueba : MonoBehaviour
 
                 if(jefe.position.x < puntoIzq.position.x)
                 {
+                    jefe.localScale = new Vector3(-1f,1f,1f);
+
                     moveRight = true;
 
-                    currentStates = bossStates.shooting;
-
-                    disparos = timeBetweenShots;
+                    EndMovement();
                 }
             }
             break;
@@ -82,6 +91,15 @@ public class BossPrueba : MonoBehaviour
     {
         currentStates = bossStates.hurt;
         hurtCounter = hurtTime;
+
+        //anim.SetTrigger("Hit");
+    }
+
+    private void EndMovement()
+    {
+        currentStates = bossStates.shooting;
+        disparos = timeBetweenShots;
+        //anim.SetTrigger("StopMoving")
     }
     
 }
