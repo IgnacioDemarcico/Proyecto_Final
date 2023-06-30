@@ -34,7 +34,7 @@ public class VidaEnemigo : MonoBehaviour
         }
         else
         {
-            Movimiento.instance.KnockBack();
+            //Movimiento.instance.KnockBack();
         }
     }
    

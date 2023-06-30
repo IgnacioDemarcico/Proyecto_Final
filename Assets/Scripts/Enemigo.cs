@@ -37,8 +37,8 @@ public class Enemigo : MonoBehaviour
             if(movingRight)
             {
                 theRB.velocity = new Vector2(moveSpeed, theRB.velocity.y);
-
-                theSr.flipX = true;
+                gameObject.GetComponent<Animator>().SetBool("movement", true);
+                theSr.flipX = false;
                 if(transform.position.x > rightPoint.position.x)
             {
                 movingRight = false;
@@ -47,8 +47,8 @@ public class Enemigo : MonoBehaviour
             else
             {
                 theRB.velocity = new Vector2(-moveSpeed, theRB.velocity.y);
-
-                theSr.flipX = false;
+                gameObject.GetComponent<Animator>().SetBool("movement", true);
+                theSr.flipX = true;
 
                 if(transform.position.x < leftPoint.position.x)
                 {
@@ -65,6 +65,7 @@ public class Enemigo : MonoBehaviour
             {
                 waitCount -= Time.deltaTime;
                 theRB.velocity = new Vector2(0f, theRB.velocity.y);
+                gameObject.GetComponent<Animator>().SetBool("movement", false);
                 
                 if(waitCount <= 0)
                 {
