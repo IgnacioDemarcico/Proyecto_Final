@@ -27,7 +27,7 @@ public class AtqMelee : MonoBehaviour
             }
         }
     }
-    private void DibujarGizmos(){
+    private void OnDrawGizmos(){
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(controladorMelee.position,radioGolpe); 
     }
