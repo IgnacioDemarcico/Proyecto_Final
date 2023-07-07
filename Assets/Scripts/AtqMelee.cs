@@ -20,7 +20,7 @@ public class AtqMelee : MonoBehaviour
         Collider2D[] objetos = Physics2D.OverlapCircleAll(controladorMelee.position, radioGolpe);
         foreach (Collider2D colisionador in objetos)
         {
-            if (colisionador.CompareTag("Enemigo"))
+            if (colisionador.CompareTag("Enemigo") || colisionador.CompareTag("Jefe"))
             {
                 colisionador.transform.GetComponent<VidaEnemigo>().TomarDanio(danioGolpe);
             }
