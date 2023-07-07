@@ -20,6 +20,10 @@ public class JefeNuevo : MonoBehaviour
     public bool derrotadoJ;
 
     // Start is called before the first frame update
+    private void Awake()
+    {
+        instance = this;
+    }
     void Start()
     {
         theRB = GetComponent<Rigidbody2D>();
