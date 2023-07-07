@@ -4,40 +4,50 @@ using UnityEngine;
 
 public class AtqMelee : MonoBehaviour
 {
-   // Start is called before the first frame update
-   [SerializeField] private Transform controladorMelee;
+    [SerializeField] private Transform controladorMelee;
     [SerializeField] private float radioGolpe;
-    [SerializeField] private float DanioGolpe;
-    //[SerializeField] private float cooldown; para el tiempo entre ataques
-    //private Animator animator; SIRVE DESPUES CUANDO TENGAMOS LAS ANIMACIONES
+    [SerializeField] private float danioGolpe;
 
-    private void Start()
-    {
-        //animator = GetComponent<Animator>();
-    }
+    private bool isAttacking = false;
+
     private void Golpe()
     {
-        //animator.SetTrigger("Golpe");
+        if (isAttacking)
+            return;
+
+        isAttacking = true;
+
         Collider2D[] objetos = Physics2D.OverlapCircleAll(controladorMelee.position, radioGolpe);
-        foreach(Collider2D colisionador in objetos)
+        foreach (Collider2D colisionador in objetos)
         {
-            if(colisionador.CompareTag("Enemigo"))
+            if (colisionador.CompareTag("Enemigo"))
             {
-                colisionador.transform.GetComponent<VidaEnemigo>().TomarDanio(DanioGolpe);
+                colisionador.transform.GetComponent<VidaEnemigo>().TomarDanio(danioGolpe);
             }
         }
+
+        StartCoroutine(ResetAttack());
     }
-    private void OnDrawGizmos(){
+
+    private IEnumerator ResetAttack()
+    {
+        // Esperar un pequeño tiempo antes de permitir otro ataque
+        yield return new WaitForSeconds(0.2f);
+
+        isAttacking = false;
+    }
+
+    private void OnDrawGizmos()
+    {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(controladorMelee.position,radioGolpe); 
+        Gizmos.DrawWireSphere(controladorMelee.position, radioGolpe);
     }
+
     private void Update()
     {
-        if(Input.GetKey("e"))
+        if (Input.GetKey("e"))
         {
             Golpe();
         }
     }
-   
-    
 }
