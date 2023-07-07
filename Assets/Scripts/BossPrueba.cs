@@ -39,6 +39,7 @@ public class BossPrueba : MonoBehaviour
     {
         switch(currentStates)
         {
+            
             case bossStates.shooting:
 
             disparos -= Time.deltaTime;
