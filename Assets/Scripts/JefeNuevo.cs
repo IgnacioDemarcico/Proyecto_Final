@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class JefeNuevo : MonoBehaviour
 {
+    public static JefeNuevo instance;
     public float moveSpeed;
 
     public Transform leftPoint, rightPoint;
