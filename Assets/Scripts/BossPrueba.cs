@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BossPrueba : MonoBehaviour
 {
-    public enum bossStates{shooting, hurt, moving};
+    public enum bossStates{shooting, hurt, moving, ended};
     public bossStates currentStates;
     public Transform jefe;
    // public Animator anim;
@@ -23,6 +23,12 @@ public class BossPrueba : MonoBehaviour
     [Header("DañoRecibido")]
     public float hurtTime;
     private float hurtCounter;
+
+    [Header ("Vida")]
+    public int vida = 5;
+    public GameObject explosion;
+    private bool derrotado;
+    public float shotSpeedUp;
     void Start()
     {
         currentStates = bossStates.shooting;
@@ -53,6 +59,13 @@ public class BossPrueba : MonoBehaviour
                 if(hurtCounter <= 0)
                 {
                     currentStates = bossStates.moving;
+
+                    if(derrotado)
+                    {
+                        jefe.gameObject.SetActive(false);
+                        Instantiate(explosion, jefe.position, jefe.rotation);
+                        currentStates = bossStates.ended;
+                    }
                 }
             }
             break;
@@ -93,6 +106,16 @@ public class BossPrueba : MonoBehaviour
         hurtCounter = hurtTime;
 
         //anim.SetTrigger("Hit");
+        vida--;
+
+        if(vida <= 0)
+        {
+            derrotado = true;
+        }
+        else
+        {
+            timeBetweenShots /= shotSpeedUp;
+        }
     }
 
     private void EndMovement()
