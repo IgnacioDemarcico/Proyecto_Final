@@ -33,10 +33,10 @@ public class VidaEnemigo : MonoBehaviour
         {
            currentHealth = 0;
            Destroy(gameObject);
-           /*if(other.Tag=="Jefe")
+           if(gameObject.CompareTag("Jefe"))
            {
             TerminarJuego();
-           }*/
+           }
         }
         else
         {
