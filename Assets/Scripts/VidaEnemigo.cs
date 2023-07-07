@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class VidaEnemigo : MonoBehaviour
 {
@@ -31,11 +33,19 @@ public class VidaEnemigo : MonoBehaviour
         {
            currentHealth = 0;
            Destroy(gameObject);
+           /*if(other.Tag=="Jefe")
+           {
+            TerminarJuego();
+           }*/
         }
         else
         {
             //Movimiento.instance.KnockBack();
         }
+    }
+    public void TerminarJuego()
+    {
+        SceneManager.LoadScene("FinDeJuego");
     }
    
 }
