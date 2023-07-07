@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Level 1.unity
     guid: 9abd91ebbf116314b9e98db3c98e3016
   - enabled: 1
-    path: Assets/Scenes/MenuSecundario.unity
+    path: Assets/Scenes/FInDeJuego.unity
     guid: b46c7003e6f60b143b8271667743f218
   - enabled: 0
     path: 
