@@ -1549,6 +1549,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3097.658, y: 18.439545}
   m_EdgeRadius: 0
+--- !u!4 &1342990652 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2371862316562142143, guid: 13e516876af4e0a42bfe12ec6cb74251, type: 3}
+  m_PrefabInstance: {fileID: 1722129854}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1400586047
 GameObject:
   m_ObjectHideFlags: 0
@@ -1791,6 +1796,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2371862316551253265, guid: 13e516876af4e0a42bfe12ec6cb74251, type: 3}
+      propertyPath: leftPoint
+      value: 
+      objectReference: {fileID: 1342990652}
+    - target: {fileID: 2371862316551253265, guid: 13e516876af4e0a42bfe12ec6cb74251, type: 3}
+      propertyPath: rightPoint
+      value: 
+      objectReference: {fileID: 1779032681}
     - target: {fileID: 2371862316551253270, guid: 13e516876af4e0a42bfe12ec6cb74251, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1801,11 +1814,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2371862316551253270, guid: 13e516876af4e0a42bfe12ec6cb74251, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 127
+      value: 122
+      objectReference: {fileID: 0}
+    - target: {fileID: 2371862316562142143, guid: 13e516876af4e0a42bfe12ec6cb74251, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.29
       objectReference: {fileID: 0}
     - target: {fileID: 2371862316950459429, guid: 13e516876af4e0a42bfe12ec6cb74251, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.5
+      value: 1.95
       objectReference: {fileID: 0}
     - target: {fileID: 2371862316950459429, guid: 13e516876af4e0a42bfe12ec6cb74251, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2169,7 +2186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controladorMelee: {fileID: 790533624}
   radioGolpe: 50
-  danioGolpe: 0
+  danioGolpe: 1
 --- !u!1 &1775403755
 GameObject:
   m_ObjectHideFlags: 0
@@ -2271,6 +2288,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!4 &1779032681 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2371862316950459429, guid: 13e516876af4e0a42bfe12ec6cb74251, type: 3}
+  m_PrefabInstance: {fileID: 1722129854}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1878453287
 GameObject:
   m_ObjectHideFlags: 0

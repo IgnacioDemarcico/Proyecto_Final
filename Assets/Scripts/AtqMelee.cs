@@ -33,8 +33,8 @@ public class AtqMelee : MonoBehaviour
     {
         // Esperar un pequeño tiempo antes de permitir otro ataque
         yield return new WaitForSeconds(0.2f);
-
         isAttacking = false;
+        gameObject.GetComponent<Animator>().SetBool("ataca", false);
     }
 
     private void OnDrawGizmos()
@@ -45,9 +45,11 @@ public class AtqMelee : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey("e"))
+        if ((Input.GetKey("e")) || (Input.GetKey("e")) & (Input.GetKey("a")) || (Input.GetKey("e")) & (Input.GetKey("d"))) 
         {
             Golpe();
+            gameObject.GetComponent<Animator>().SetBool("ataca", true);
+
         }
     }
 }
