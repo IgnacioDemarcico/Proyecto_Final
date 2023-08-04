@@ -11,24 +11,28 @@ public class Movimiento : MonoBehaviour
     public float KnockBackLength, knockBackForce;
     private float knockBackCounter;
     public static Movimiento instance;
-
+    private SpriteRenderer spriteRenderer;
 
     private void Awake()
     {
         instance = this;
+        spriteRenderer = GetComponent<SpriteRenderer>()
         rb = GetComponent<Rigidbody2D>();
     }
     private void Update()
     {
+        
         if (knockBackCounter <= 0)
         {
             if (Input.GetKey("a"))
             {
                 gameObject.GetComponent<Animator>().SetBool("movimiento", true);
+                 spriteRenderer.flipX = true; // Voltea hacia la izquierda
             }
             if (Input.GetKey("d"))
             {
                 gameObject.GetComponent<Animator>().SetBool("movimiento", true);
+                 spriteRenderer.flipX = false; // Voltea hacia la derecha
             }
             if (!Input.GetKey("a") && !Input.GetKey("d"))
             {
