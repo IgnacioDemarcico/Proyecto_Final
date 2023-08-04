@@ -16,7 +16,7 @@ public class Movimiento : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        spriteRenderer = GetComponent<SpriteRenderer>()
+        spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
     }
     private void Update()
