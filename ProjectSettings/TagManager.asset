@@ -48,3 +48,15 @@ TagManager:
   - name: Fondo
     uniqueID: 406208001
     locked: 0
+  - name: Suelo
+    uniqueID: 3818151919
+    locked: 0
+  - name: Enemigos
+    uniqueID: 2585399453
+    locked: 0
+  - name: Player
+    uniqueID: 1296084021
+    locked: 0
+  - name: Detalles
+    uniqueID: 2851401221
+    locked: 0
