@@ -51,8 +51,16 @@ public class Movimiento : MonoBehaviour
             }
         }
         else
-        {
+           {
             knockBackCounter -= Time.deltaTime;
+            if(!spriteRenderer.flipX)
+            {
+                rb.velocity = new Vector2(-knockBackForce, rb.velocity.y);
+            }
+            else
+            {
+                rb.velocity = new Vector2(knockBackForce, rb.velocity.y);
+            }
            }
 
         }

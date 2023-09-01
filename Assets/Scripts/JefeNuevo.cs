@@ -8,7 +8,6 @@ public class JefeNuevo : MonoBehaviour
     public float moveSpeed;
 
     public Transform leftPoint, rightPoint;
-
     private bool movingRight;
 
     private Rigidbody2D theRB;
