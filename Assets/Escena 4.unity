@@ -2164,8 +2164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e5d23d702406284ba8459690daa3fa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 2
-  maxHealth: 10
+  currentHealth: 1
+  maxHealth: 1
   ivencibleLength: 1
   barraDeVida: {fileID: 1180730396}
 --- !u!114 &1732712374

@@ -43,7 +43,9 @@ public class PlayerVida : MonoBehaviour
             if (currentHealth <= 0)
             {
                 currentHealth = 0;
+                //StartCoroutine(muerte());
                 LevelManager.instance.RespawnPlayer();
+
             }
             else
             {
@@ -54,7 +56,16 @@ public class PlayerVida : MonoBehaviour
         }
         
     }
+    IEnumerator muerte()
+    {   
+        gameObject.GetComponent<Animator>().SetBool("Muere", true);
+        yield return new WaitForSeconds(0.45f);
+        gameObject.GetComponent<Animator>().SetBool("Muere", false);
+        LevelManager.instance.RespawnPlayer();
 
+    }
+
+     
     public void HealPLayer()
     {
         currentHealth++;
