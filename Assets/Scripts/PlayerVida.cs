@@ -43,8 +43,8 @@ public class PlayerVida : MonoBehaviour
             if (currentHealth <= 0)
             {
                 currentHealth = 0;
-                //StartCoroutine(muerte());
-                LevelManager.instance.RespawnPlayer();
+                StartCoroutine(muerte());
+                Movimiento.instance.KnockBack();//Probablemente se necesite en movimiento y no en playercontroller (Poner las variables y despues hacer el instance)
 
             }
             else
