@@ -11,7 +11,7 @@ public class AjustesVolumen : MonoBehaviour
 
     private void Start()
     {
-        audios = GameObject.FindGameObjectsWithTag("audios");
+        audios = GameObject.FindGameObjectsWithTag("audio");
         controlVolumen.value = PlayerPrefs.GetFloat("volumenSave",1f);
     }
 
