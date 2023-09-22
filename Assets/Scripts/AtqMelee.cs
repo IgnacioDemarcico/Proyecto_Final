@@ -36,7 +36,6 @@ public class AtqMelee : MonoBehaviour
         isAttacking = false;
         gameObject.GetComponent<Animator>().SetBool("ataca", false);
     }
-
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
@@ -47,8 +46,8 @@ public class AtqMelee : MonoBehaviour
     {
         if ((Input.GetKey("e")) || (Input.GetKey("e")) & (Input.GetKey("a")) || (Input.GetKey("e")) & (Input.GetKey("d"))) 
         {
-            Golpe();
             gameObject.GetComponent<Animator>().SetBool("ataca", true);
+            Golpe();
 
         }
     }
