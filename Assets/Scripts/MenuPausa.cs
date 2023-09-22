@@ -40,9 +40,11 @@ public class MenuPausa : MonoBehaviour
     public void LevelSelect()
     {
         SceneManager.LoadScene(levelSelect);
+        Time.timeScale = 1f;
     }
     public void MainMenu()
     {
         SceneManager.LoadScene(mainMenu);
+        Time.timeScale = 1f;
     }
 }
