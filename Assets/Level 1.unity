@@ -754,8 +754,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fb172efa06b2ed4b9d05da86bb47202, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelSelect: 
-  mainMenu: 
+  levelSelect: LevelSelect
+  mainMenu: MenuSecundario
   menuPausa: {fileID: 746455562}
   enPausa: 0
 --- !u!4 &148146719 stripped

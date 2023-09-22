@@ -5,13 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class MenuPausa : MonoBehaviour
 {
+    public static MenuPausa instance;
     public string levelSelect, mainMenu;
     public GameObject menuPausa;
     public bool enPausa;
 
-    void Start()
+    void Awake()
     {
-        
+        instance = this;
     }
 
     // Update is called once per frame
