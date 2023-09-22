@@ -21,8 +21,9 @@ public class Movimiento : MonoBehaviour
     }
     private void Update()
     {
-        
-        if (knockBackCounter <= 0)
+        if(!MenuPausa.instance.enPausa)
+        {
+            if (knockBackCounter <= 0)
         {
             if (Input.GetKey("a"))
             {
@@ -62,8 +63,8 @@ public class Movimiento : MonoBehaviour
                 rb.velocity = new Vector2(knockBackForce, rb.velocity.y);
             }
            }
-
         }
+    }
 
     private void Saltar()
     {
