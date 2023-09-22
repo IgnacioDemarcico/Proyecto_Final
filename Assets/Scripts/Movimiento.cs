@@ -46,7 +46,7 @@ public class Movimiento : MonoBehaviour
             // Aplica la velocidad al Rigidbody2D
             rb.velocity = velocidadMovimiento;
 
-            if (Input.GetKeyDown(KeyCode.Space) && enSuelo)
+            if (Input.GetKeyDown("w") && enSuelo)
             {
                 Saltar();
             }
