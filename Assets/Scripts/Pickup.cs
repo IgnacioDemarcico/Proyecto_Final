@@ -15,6 +15,7 @@ public class Pickup : MonoBehaviour
             if(moneda)
             {
                 LevelManager.instance.monedasAgarradas++;
+                UIController.instance.UpdateContadorMonedas();
                 agarrada = true;
                 Destroy(gameObject);
             }

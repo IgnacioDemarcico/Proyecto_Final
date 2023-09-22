@@ -1,24 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class UIController : MonoBehaviour
 {
 
     public static UIController instance;
+    public Text textoMoneda;
+
     public void Awake()
     {
         instance = this;
     }
-    // Start is called before the first frame update
     void Start()
     {
-        
+        UpdateContadorMonedas();
     }
-
-    // Update is called once per frame
-    void Update()
+    // Start is called before the first frame update
+    public void UpdateContadorMonedas()
     {
-        
+        textoMoneda.text = LevelManager.instance.monedasAgarradas.ToString();
     }
 }
