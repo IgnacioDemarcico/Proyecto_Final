@@ -36,7 +36,6 @@ public class VidaEnemigo : MonoBehaviour
            if(gameObject.CompareTag("Jefe"))
            {
             StartCoroutine(muerteJefe());
-            TerminarJuego();
            }
         }
         else
@@ -51,7 +50,8 @@ public class VidaEnemigo : MonoBehaviour
     IEnumerator muerteJefe()
     {   
         gameObject.GetComponent<Animator>().SetBool("death", true);
-        yield return new WaitForSeconds(100f);
+        yield return new WaitForSeconds(5f);
+        TerminarJuego();
         gameObject.GetComponent<Animator>().SetBool("death", false);
     }
    
