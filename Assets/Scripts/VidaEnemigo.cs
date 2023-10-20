@@ -35,6 +35,7 @@ public class VidaEnemigo : MonoBehaviour
            Destroy(gameObject);
            if(gameObject.CompareTag("Jefe"))
            {
+            StartCoroutine(muerteJefe());
             TerminarJuego();
            }
         }
@@ -46,6 +47,12 @@ public class VidaEnemigo : MonoBehaviour
     public void TerminarJuego()
     {
         SceneManager.LoadScene("FinDeJuego");
+    }
+    IEnumerator muerteJefe()
+    {   
+        gameObject.GetComponent<Animator>().SetBool("death", true);
+        yield return new WaitForSeconds(100f);
+        gameObject.GetComponent<Animator>().SetBool("death", false);
     }
    
 }
