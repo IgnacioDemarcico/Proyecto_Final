@@ -32,15 +32,14 @@ public class VidaEnemigo : MonoBehaviour
         if(currentHealth <= 0)
         {
            currentHealth = 0;
-           Destroy(gameObject);
            if(gameObject.CompareTag("Jefe"))
            {
             StartCoroutine(muerteJefe());
            }
         }
-        else
+        else if(gameObject.CompareTag("Enemigo"))
         {
-            //Movimiento.instance.KnockBack();
+            Destroy(gameObject);
         }
     }
     public void TerminarJuego()
@@ -50,9 +49,10 @@ public class VidaEnemigo : MonoBehaviour
     IEnumerator muerteJefe()
     {   
         gameObject.GetComponent<Animator>().SetBool("death", true);
-        yield return new WaitForSeconds(5f);
-        TerminarJuego();
+        yield return new WaitForSeconds(1f);
         gameObject.GetComponent<Animator>().SetBool("death", false);
+        Destroy(gameObject);
+        TerminarJuego();
     }
    
 }
