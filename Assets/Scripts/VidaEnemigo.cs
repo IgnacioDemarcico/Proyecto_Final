@@ -37,9 +37,13 @@ public class VidaEnemigo : MonoBehaviour
             StartCoroutine(muerteJefe());
            }
         }
+<<<<<<< HEAD
         else if(currentHealth <= 0 && gameObject.CompareTag("Enemigo"))
+=======
+        else if(currentHealth<= 0 && gameObject.CompareTag("Enemigo"))
+>>>>>>> c085132a2326886b3adf89de7929e18bbb06622b
         {
-            Destroy(gameObject);
+            Destroy(gameObject.CompareTag("Enemigo"));
         }
     }
     public void TerminarJuego()
