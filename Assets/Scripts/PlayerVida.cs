@@ -75,4 +75,16 @@ public class PlayerVida : MonoBehaviour
         }
         barraDeVida.CambiarVidaActual(currentHealth);
     }
+
+    public void HitKO()
+    {
+        if (ivencibleCounter <= 0)
+        {
+            currentHealth = 0;
+            barraDeVida.CambiarVidaActual(currentHealth);
+            StartCoroutine(muerte());
+            Movimiento.instance.KnockBack();//Probablemente se necesite en movimiento y no en playercontroller (Poner las variables y despues hacer el instance)
+        }
+        
+    }
 }
