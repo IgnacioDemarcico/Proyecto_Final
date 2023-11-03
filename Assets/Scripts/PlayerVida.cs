@@ -87,4 +87,18 @@ public class PlayerVida : MonoBehaviour
         }
         
     }
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "Suelo")
+        {
+            transform.parent = other.transform;
+        }
+    }
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "Suelo")
+        {
+            transform.parent = null;
+        }
+    }
 }
