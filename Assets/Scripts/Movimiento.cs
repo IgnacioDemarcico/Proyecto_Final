@@ -47,7 +47,8 @@ public class Movimiento : MonoBehaviour
             rb.velocity = velocidadMovimiento;
 
             if (Input.GetKeyDown(KeyCode.Space) && enSuelo)
-            {
+            {   
+                gameObject.GetComponent<Animator>().SetBool("salta", true);
                 Saltar();
             }
         }
@@ -69,6 +70,7 @@ public class Movimiento : MonoBehaviour
     private void Saltar()
     {
         // Aplica una fuerza vertical al Rigidbody2D para el salto
+         gameObject.GetComponent<Animator>().SetBool("salta", true);
         rb.AddForce(new Vector2(0f, fuerzaSalto), ForceMode2D.Impulse);
         enSuelo = false;
     }
@@ -79,6 +81,7 @@ public class Movimiento : MonoBehaviour
         if (collision.gameObject.CompareTag("Suelo"))
         {
             enSuelo = true;
+            gameObject.GetComponent<Animator>().SetBool("salta", false);
         }
     }
     public void KnockBack()
