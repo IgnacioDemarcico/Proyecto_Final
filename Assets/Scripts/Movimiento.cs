@@ -49,6 +49,7 @@ public class Movimiento : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space) && enSuelo)
             {   
                 gameObject.GetComponent<Animator>().SetBool("salta", true);
+                StartCoroutine(Esperar());
                 Saltar();
             }
         }
@@ -70,9 +71,14 @@ public class Movimiento : MonoBehaviour
     private void Saltar()
     {
         // Aplica una fuerza vertical al Rigidbody2D para el salto
-         gameObject.GetComponent<Animator>().SetBool("salta", true);
+        gameObject.GetComponent<Animator>().SetBool("salta", true);
         rb.AddForce(new Vector2(0f, fuerzaSalto), ForceMode2D.Impulse);
         enSuelo = false;
+    }
+
+    IEnumerator Esperar()
+    {
+        yield return new WaitForSeconds(0.45f);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
