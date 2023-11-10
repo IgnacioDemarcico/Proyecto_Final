@@ -120,19 +120,19 @@ TextureImporter:
       name: toth (jefe)_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 16
         y: 28
-        width: 60
+        width: 34
         height: 57
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddf948407c9e20c408ff9f4ac2b693fb
-      internalID: -2107434110
+      spriteID: 1e807bdfedeb8454980c133091a9a5c3
+      internalID: -1624549345
       vertices: []
       indices: 
       edges: []
@@ -141,19 +141,19 @@ TextureImporter:
       name: toth (jefe)_1
       rect:
         serializedVersion: 2
-        x: 60
+        x: 72
         y: 28
-        width: 60
+        width: 41
         height: 57
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abd50c08b96bff5499a87aaf50eaa861
-      internalID: 248554585
+      spriteID: 4a4c5a50652e3094c8ab408026819b7d
+      internalID: 122201596
       vertices: []
       indices: 
       edges: []
@@ -169,8 +169,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      toth (jefe)_0: -2107434110
-      toth (jefe)_1: 248554585
+      toth (jefe)_0: -1624549345
+      toth (jefe)_1: 122201596
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
