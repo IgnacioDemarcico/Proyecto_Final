@@ -43,8 +43,8 @@ public class VidaEnemigo : MonoBehaviour
         }
     }
     public void TerminarJuego()
-    {
-        SceneManager.LoadScene("FinDeJuego");
+    {   
+        SceneManager.LoadScene("LevelSelect");
     }
     IEnumerator muerteJefe()
     {   
@@ -54,5 +54,4 @@ public class VidaEnemigo : MonoBehaviour
         Destroy(gameObject);
         TerminarJuego();
     }
-   
 }
