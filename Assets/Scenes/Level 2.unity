@@ -160,11 +160,15 @@ Transform:
   m_Children:
   - {fileID: 1890379923}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_RootOrder: 44
 =======
   m_RootOrder: 43
 >>>>>>> Stashed changes
+=======
+  m_RootOrder: 41
+>>>>>>> parent of 261e3ab (ahora mejor)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &24876055
 MonoBehaviour:
@@ -345,11 +349,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8053838127326982024, guid: ee61688cd0c74ca4f8003003ac3d8a60, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 21
 =======
       value: 20
 >>>>>>> Stashed changes
+=======
+      value: 17
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 8053838127326982024, guid: ee61688cd0c74ca4f8003003ac3d8a60, type: 3}
       propertyPath: m_LocalScale.x
@@ -631,7 +639,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2735747323474513436, guid: cda846a1db40c3b45bd7b9125d0e87ec, type: 3}
       propertyPath: m_RootOrder
-      value: 31
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 2735747323474513436, guid: cda846a1db40c3b45bd7b9125d0e87ec, type: 3}
       propertyPath: m_LocalPosition.x
@@ -791,7 +799,11 @@ RectTransform:
   - {fileID: 1861750149}
   - {fileID: 746455563}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 42
+=======
+  m_RootOrder: 39
+>>>>>>> parent of 261e3ab (ahora mejor)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -893,7 +905,11 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 47
+=======
+  m_RootOrder: 44
+>>>>>>> parent of 261e3ab (ahora mejor)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &165261931
 PrefabInstance:
@@ -908,11 +924,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8053838127326982024, guid: ee61688cd0c74ca4f8003003ac3d8a60, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 59
 =======
       value: 58
 >>>>>>> Stashed changes
+=======
+      value: 56
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 8053838127326982024, guid: ee61688cd0c74ca4f8003003ac3d8a60, type: 3}
       propertyPath: m_LocalScale.x
@@ -928,7 +948,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8053838127326982024, guid: ee61688cd0c74ca4f8003003ac3d8a60, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 371
+      value: 362
       objectReference: {fileID: 0}
     - target: {fileID: 8053838127326982024, guid: ee61688cd0c74ca4f8003003ac3d8a60, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1112,7 +1132,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8053838127326982024, guid: ee61688cd0c74ca4f8003003ac3d8a60, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
       value: 11
+=======
+      value: 7
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 8053838127326982024, guid: ee61688cd0c74ca4f8003003ac3d8a60, type: 3}
       propertyPath: m_LocalScale.y
@@ -1270,7 +1294,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8544849348915643393, guid: a9ad35b9b769dcf4f99e6fd850f3510a, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
       value: 5
+=======
+      value: 2
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 8544849348915643393, guid: a9ad35b9b769dcf4f99e6fd850f3510a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1278,7 +1306,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8544849348915643393, guid: a9ad35b9b769dcf4f99e6fd850f3510a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 531
+      value: 520.4
       objectReference: {fileID: 0}
     - target: {fileID: 8544849348915643393, guid: a9ad35b9b769dcf4f99e6fd850f3510a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1331,11 +1359,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8053838127326982024, guid: ee61688cd0c74ca4f8003003ac3d8a60, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 19
 =======
       value: 18
 >>>>>>> Stashed changes
+=======
+      value: 15
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 8053838127326982024, guid: ee61688cd0c74ca4f8003003ac3d8a60, type: 3}
       propertyPath: m_LocalScale.x
@@ -1530,7 +1562,11 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 51
+=======
+  m_RootOrder: 48
+>>>>>>> parent of 261e3ab (ahora mejor)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &481414585
 PrefabInstance:
@@ -1545,7 +1581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4248936563279451478, guid: 652266b89e483584a88e918bbff0687c, type: 3}
       propertyPath: m_RootOrder
-      value: 35
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 4248936563279451478, guid: 652266b89e483584a88e918bbff0687c, type: 3}
       propertyPath: m_LocalScale.x
@@ -1763,7 +1799,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2198613462791302497, guid: 251736fc5de8b16429f87bc8902d5f28, type: 3}
       propertyPath: m_RootOrder
-      value: 40
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 2198613462791302497, guid: 251736fc5de8b16429f87bc8902d5f28, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1852,7 +1888,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6418446847163402357, guid: 5880bbb4dfe384543bcaf7c98aa90e3c, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
       value: 9
+=======
+      value: 5
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 6418446847163402357, guid: 5880bbb4dfe384543bcaf7c98aa90e3c, type: 3}
       propertyPath: m_LocalScale.x
@@ -1909,11 +1949,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8544849348915643393, guid: a9ad35b9b769dcf4f99e6fd850f3510a, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 28
 =======
       value: 27
 >>>>>>> Stashed changes
+=======
+      value: 24
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 8544849348915643393, guid: a9ad35b9b769dcf4f99e6fd850f3510a, type: 3}
       propertyPath: m_LocalScale.y
@@ -2047,11 +2091,15 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_RootOrder: 58
 =======
   m_RootOrder: 57
 >>>>>>> Stashed changes
+=======
+  m_RootOrder: 53
+>>>>>>> parent of 261e3ab (ahora mejor)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &649832375
 PrefabInstance:
@@ -2062,11 +2110,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3789462404597200264, guid: f9528a791de39f941b46ec72de3593c0, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 17
 =======
       value: 16
 >>>>>>> Stashed changes
+=======
+      value: 13
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 3789462404597200264, guid: f9528a791de39f941b46ec72de3593c0, type: 3}
       propertyPath: m_LocalScale.y
@@ -2234,7 +2286,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2371862316551253270, guid: 13e516876af4e0a42bfe12ec6cb74251, type: 3}
       propertyPath: m_RootOrder
-      value: 36
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 2371862316551253270, guid: 13e516876af4e0a42bfe12ec6cb74251, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2525,7 +2577,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2198613462791302497, guid: 251736fc5de8b16429f87bc8902d5f28, type: 3}
       propertyPath: m_RootOrder
-      value: 44
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: 2198613462791302497, guid: 251736fc5de8b16429f87bc8902d5f28, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2598,11 +2650,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7267352474593845392, guid: 6675eb7df3d58b3489be62295d8a16f9, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 25
 =======
       value: 24
 >>>>>>> Stashed changes
+=======
+      value: 21
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 7267352474593845392, guid: 6675eb7df3d58b3489be62295d8a16f9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2789,7 +2845,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2735747323474513436, guid: cda846a1db40c3b45bd7b9125d0e87ec, type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 2735747323474513436, guid: cda846a1db40c3b45bd7b9125d0e87ec, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2858,7 +2914,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1599079072752105790, guid: 11f38924dd12e5b4db855f06651741c9, type: 3}
       propertyPath: m_RootOrder
-      value: 53
+      value: 52
       objectReference: {fileID: 0}
     - target: {fileID: 1599079072752105790, guid: 11f38924dd12e5b4db855f06651741c9, type: 3}
       propertyPath: m_LocalScale.x
@@ -2923,7 +2979,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2371862316551253270, guid: 13e516876af4e0a42bfe12ec6cb74251, type: 3}
       propertyPath: m_RootOrder
-      value: 34
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 2371862316551253270, guid: 13e516876af4e0a42bfe12ec6cb74251, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3027,7 +3083,11 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 49
+=======
+  m_RootOrder: 46
+>>>>>>> parent of 261e3ab (ahora mejor)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &920883910 stripped
 GameObject:
@@ -3059,7 +3119,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2735747323474513436, guid: cda846a1db40c3b45bd7b9125d0e87ec, type: 3}
       propertyPath: m_RootOrder
-      value: 38
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 2735747323474513436, guid: cda846a1db40c3b45bd7b9125d0e87ec, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3124,15 +3184,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5670573603149504505, guid: 36d68ebb6d33fab4e8dc6967addc47f8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
       value: 50
+=======
+      value: 49
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 5670573603149504505, guid: 36d68ebb6d33fab4e8dc6967addc47f8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2450.75
+      value: 2833.28
       objectReference: {fileID: 0}
     - target: {fileID: 5670573603149504505, guid: 36d68ebb6d33fab4e8dc6967addc47f8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 77.09999
+      value: -190.77
       objectReference: {fileID: 0}
     - target: {fileID: 5670573603149504505, guid: 36d68ebb6d33fab4e8dc6967addc47f8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3178,11 +3242,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8544849348915643393, guid: a9ad35b9b769dcf4f99e6fd850f3510a, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 54
 =======
       value: 55
 >>>>>>> Stashed changes
+=======
+      value: 53
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 8544849348915643393, guid: a9ad35b9b769dcf4f99e6fd850f3510a, type: 3}
       propertyPath: m_LocalScale.y
@@ -3323,11 +3391,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8053838127326982024, guid: ee61688cd0c74ca4f8003003ac3d8a60, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 4
 =======
       value: 3
 >>>>>>> Stashed changes
+=======
+      value: 1
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 8053838127326982024, guid: ee61688cd0c74ca4f8003003ac3d8a60, type: 3}
       propertyPath: m_LocalScale.x
@@ -3392,7 +3464,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2735747323474513436, guid: cda846a1db40c3b45bd7b9125d0e87ec, type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2735747323474513436, guid: cda846a1db40c3b45bd7b9125d0e87ec, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3547,11 +3619,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2371862316551253270, guid: 13e516876af4e0a42bfe12ec6cb74251, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 15
 =======
       value: 14
 >>>>>>> Stashed changes
+=======
+      value: 11
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 2371862316551253270, guid: 13e516876af4e0a42bfe12ec6cb74251, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3620,7 +3696,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1599079072752105790, guid: 11f38924dd12e5b4db855f06651741c9, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
       value: 10
+=======
+      value: 6
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 1599079072752105790, guid: 11f38924dd12e5b4db855f06651741c9, type: 3}
       propertyPath: m_LocalScale.x
@@ -3628,11 +3708,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1599079072752105790, guid: 11f38924dd12e5b4db855f06651741c9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2576.0012
+      value: 2958.5312
       objectReference: {fileID: 0}
     - target: {fileID: 1599079072752105790, guid: 11f38924dd12e5b4db855f06651741c9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 45.869995
+      value: -222
       objectReference: {fileID: 0}
     - target: {fileID: 1599079072752105790, guid: 11f38924dd12e5b4db855f06651741c9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3820,15 +3900,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5670573603149504505, guid: 36d68ebb6d33fab4e8dc6967addc47f8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
       value: 48
+=======
+      value: 47
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 5670573603149504505, guid: 36d68ebb6d33fab4e8dc6967addc47f8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2576.8699
+      value: 2959.4
       objectReference: {fileID: 0}
     - target: {fileID: 5670573603149504505, guid: 36d68ebb6d33fab4e8dc6967addc47f8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 77.06999
+      value: -190.8
       objectReference: {fileID: 0}
     - target: {fileID: 5670573603149504505, guid: 36d68ebb6d33fab4e8dc6967addc47f8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3874,11 +3958,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8268103419323823940, guid: c58efc178ec3bd342bc9f971b0cdda97, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 26
 =======
       value: 25
 >>>>>>> Stashed changes
+=======
+      value: 22
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 8268103419323823940, guid: c58efc178ec3bd342bc9f971b0cdda97, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3935,11 +4023,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3789462404597200264, guid: f9528a791de39f941b46ec72de3593c0, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 20
 =======
       value: 19
 >>>>>>> Stashed changes
+=======
+      value: 16
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 3789462404597200264, guid: f9528a791de39f941b46ec72de3593c0, type: 3}
       propertyPath: m_LocalScale.y
@@ -4005,7 +4097,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2371862316551253270, guid: 13e516876af4e0a42bfe12ec6cb74251, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
       value: 14
+=======
+      value: 10
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 2371862316551253270, guid: 13e516876af4e0a42bfe12ec6cb74251, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4080,7 +4176,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6418446847163402357, guid: 5880bbb4dfe384543bcaf7c98aa90e3c, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
       value: 12
+=======
+      value: 8
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 6418446847163402357, guid: 5880bbb4dfe384543bcaf7c98aa90e3c, type: 3}
       propertyPath: m_LocalScale.y
@@ -4141,11 +4241,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8053838127326982024, guid: ee61688cd0c74ca4f8003003ac3d8a60, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 16
 =======
       value: 15
 >>>>>>> Stashed changes
+=======
+      value: 12
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 8053838127326982024, guid: ee61688cd0c74ca4f8003003ac3d8a60, type: 3}
       propertyPath: m_LocalScale.x
@@ -4210,15 +4314,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5670573603149504505, guid: 36d68ebb6d33fab4e8dc6967addc47f8, type: 3}
       propertyPath: m_RootOrder
-      value: 52
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5670573603149504505, guid: 36d68ebb6d33fab4e8dc6967addc47f8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2324.64
+      value: 2707.17
       objectReference: {fileID: 0}
     - target: {fileID: 5670573603149504505, guid: 36d68ebb6d33fab4e8dc6967addc47f8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 77.09999
+      value: -190.77
       objectReference: {fileID: 0}
     - target: {fileID: 5670573603149504505, guid: 36d68ebb6d33fab4e8dc6967addc47f8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4325,7 +4429,7 @@ Transform:
   - {fileID: 56876807}
   - {fileID: 343110461}
   m_Father: {fileID: 0}
-  m_RootOrder: 45
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1492075517
 PrefabInstance:
@@ -4340,6 +4444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3348136578240212520, guid: 37b7cdbb43227454c8bf1c17de9e8c16, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 27
       objectReference: {fileID: 0}
@@ -4357,14 +4462,17 @@ PrefabInstance:
 =======
       value: 26
 >>>>>>> Stashed changes
+=======
+      value: 23
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 3348136578240212520, guid: 37b7cdbb43227454c8bf1c17de9e8c16, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2339
+      value: 2301.4214
       objectReference: {fileID: 0}
     - target: {fileID: 3348136578240212520, guid: 37b7cdbb43227454c8bf1c17de9e8c16, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 401
+      value: 569.03156
       objectReference: {fileID: 0}
     - target: {fileID: 3348136578240212520, guid: 37b7cdbb43227454c8bf1c17de9e8c16, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4514,7 +4622,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8053838127326982024, guid: ee61688cd0c74ca4f8003003ac3d8a60, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
       value: 7
+=======
+      value: 3
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 8053838127326982024, guid: ee61688cd0c74ca4f8003003ac3d8a60, type: 3}
       propertyPath: m_LocalScale.x
@@ -4571,11 +4683,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8268103419323823940, guid: c58efc178ec3bd342bc9f971b0cdda97, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 3
 =======
       value: 4
 >>>>>>> Stashed changes
+=======
+      value: 1
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 8268103419323823940, guid: c58efc178ec3bd342bc9f971b0cdda97, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4636,7 +4752,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2735747323474513436, guid: cda846a1db40c3b45bd7b9125d0e87ec, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
       value: 8
+=======
+      value: 4
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 2735747323474513436, guid: cda846a1db40c3b45bd7b9125d0e87ec, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4693,11 +4813,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6418446847163402357, guid: 5880bbb4dfe384543bcaf7c98aa90e3c, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 24
 =======
       value: 23
 >>>>>>> Stashed changes
+=======
+      value: 20
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 6418446847163402357, guid: 5880bbb4dfe384543bcaf7c98aa90e3c, type: 3}
       propertyPath: m_LocalScale.x
@@ -4838,15 +4962,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5670573603149504505, guid: 36d68ebb6d33fab4e8dc6967addc47f8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
       value: 46
+=======
+      value: 45
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 5670573603149504505, guid: 36d68ebb6d33fab4e8dc6967addc47f8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2703
+      value: 3085.53
       objectReference: {fileID: 0}
     - target: {fileID: 5670573603149504505, guid: 36d68ebb6d33fab4e8dc6967addc47f8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 77
+      value: -190.87
       objectReference: {fileID: 0}
     - target: {fileID: 5670573603149504505, guid: 36d68ebb6d33fab4e8dc6967addc47f8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4896,7 +5024,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8537776073363484007, guid: b7ca00227a58c764e9103bbe5dca24eb, type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 8537776073363484007, guid: b7ca00227a58c764e9103bbe5dca24eb, type: 3}
       propertyPath: m_LocalScale.x
@@ -4978,11 +5106,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8268103419323823940, guid: c58efc178ec3bd342bc9f971b0cdda97, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 23
 =======
       value: 22
 >>>>>>> Stashed changes
+=======
+      value: 19
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 8268103419323823940, guid: c58efc178ec3bd342bc9f971b0cdda97, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5080,11 +5212,15 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_RootOrder: 55
 =======
   m_RootOrder: 54
 >>>>>>> Stashed changes
+=======
+  m_RootOrder: 50
+>>>>>>> parent of 261e3ab (ahora mejor)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1780860872
 PrefabInstance:
@@ -5099,7 +5235,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6418446847163402357, guid: 5880bbb4dfe384543bcaf7c98aa90e3c, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
       value: 6
+=======
+      value: 2
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 6418446847163402357, guid: 5880bbb4dfe384543bcaf7c98aa90e3c, type: 3}
       propertyPath: m_LocalScale.x
@@ -5162,7 +5302,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2371862316551253270, guid: 13e516876af4e0a42bfe12ec6cb74251, type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 2371862316551253270, guid: 13e516876af4e0a42bfe12ec6cb74251, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5342,6 +5482,7 @@ Transform:
   m_Father: {fileID: 24876054}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1001 &1907334683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5399,6 +5540,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37b7cdbb43227454c8bf1c17de9e8c16, type: 3}
+=======
+>>>>>>> parent of 261e3ab (ahora mejor)
 --- !u!1001 &1951922303
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5412,7 +5555,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2371862316551253270, guid: 13e516876af4e0a42bfe12ec6cb74251, type: 3}
       propertyPath: m_RootOrder
-      value: 37
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 2371862316551253270, guid: 13e516876af4e0a42bfe12ec6cb74251, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5489,7 +5632,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3789462404597200264, guid: f9528a791de39f941b46ec72de3593c0, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
       value: 13
+=======
+      value: 9
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 3789462404597200264, guid: f9528a791de39f941b46ec72de3593c0, type: 3}
       propertyPath: m_LocalScale.y
@@ -5688,11 +5835,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6418446847163402357, guid: 5880bbb4dfe384543bcaf7c98aa90e3c, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 18
 =======
       value: 17
 >>>>>>> Stashed changes
+=======
+      value: 14
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 6418446847163402357, guid: 5880bbb4dfe384543bcaf7c98aa90e3c, type: 3}
       propertyPath: m_LocalScale.y
@@ -5766,11 +5917,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1599079072752105790, guid: 11f38924dd12e5b4db855f06651741c9, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 29
 =======
       value: 28
 >>>>>>> Stashed changes
+=======
+      value: 25
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 1599079072752105790, guid: 11f38924dd12e5b4db855f06651741c9, type: 3}
       propertyPath: m_LocalScale.x
@@ -5835,7 +5990,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8053838127326982024, guid: ee61688cd0c74ca4f8003003ac3d8a60, type: 3}
       propertyPath: m_RootOrder
-      value: 56
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 8053838127326982024, guid: ee61688cd0c74ca4f8003003ac3d8a60, type: 3}
       propertyPath: m_LocalScale.x
@@ -6169,7 +6324,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2198613462791302497, guid: 251736fc5de8b16429f87bc8902d5f28, type: 3}
       propertyPath: m_RootOrder
-      value: 39
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 2198613462791302497, guid: 251736fc5de8b16429f87bc8902d5f28, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6242,11 +6397,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8268103419323823940, guid: c58efc178ec3bd342bc9f971b0cdda97, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 57
 =======
       value: 59
 >>>>>>> Stashed changes
+=======
+      value: 56
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 8268103419323823940, guid: c58efc178ec3bd342bc9f971b0cdda97, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6323,11 +6482,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5670573603149504505, guid: 36d68ebb6d33fab4e8dc6967addc47f8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2829.07
+      value: 3211.6
       objectReference: {fileID: 0}
     - target: {fileID: 5670573603149504505, guid: 36d68ebb6d33fab4e8dc6967addc47f8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 76.97
+      value: -190.9
       objectReference: {fileID: 0}
     - target: {fileID: 5670573603149504505, guid: 36d68ebb6d33fab4e8dc6967addc47f8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6373,11 +6532,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3789462404597200264, guid: f9528a791de39f941b46ec72de3593c0, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 22
 =======
       value: 21
 >>>>>>> Stashed changes
+=======
+      value: 18
+>>>>>>> parent of 261e3ab (ahora mejor)
       objectReference: {fileID: 0}
     - target: {fileID: 3789462404597200264, guid: f9528a791de39f941b46ec72de3593c0, type: 3}
       propertyPath: m_LocalPosition.x
