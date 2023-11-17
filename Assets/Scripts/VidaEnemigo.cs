@@ -36,10 +36,6 @@ public class VidaEnemigo : MonoBehaviour
            {
             StartCoroutine(muerteJefe());
            }
-           else if(gameObject.CompareTag("Jefe2"))
-           {
-            SceneManager.LoadScene("FinDeJuego");
-           }
         }
         if(currentHealth <= 0 && gameObject.CompareTag("Enemigo"))
         {

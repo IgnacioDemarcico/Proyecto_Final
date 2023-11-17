@@ -9,6 +9,7 @@ TagManager:
   - Suelo
   - Jefe
   - audio
+  - Jefe2
   layers:
   - Default
   - TransparentFX
